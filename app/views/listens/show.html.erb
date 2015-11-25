@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Album:</strong>
+  <%= @listen.album %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @listen.user %>
+</p>
+
+<%= link_to 'Edit', edit_listen_path(@listen) %> |
+<%= link_to 'Back', listens_path %>

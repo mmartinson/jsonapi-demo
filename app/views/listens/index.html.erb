@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Listens</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Album</th>
+      <th>User</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @listens.each do |listen| %>
+      <tr>
+        <td><%= listen.album %></td>
+        <td><%= listen.user %></td>
+        <td><%= link_to 'Show', listen %></td>
+        <td><%= link_to 'Edit', edit_listen_path(listen) %></td>
+        <td><%= link_to 'Destroy', listen, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Listen', new_listen_path %>
