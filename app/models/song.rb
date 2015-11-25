@@ -11,5 +11,5 @@
 
 class Song < ActiveRecord::Base
   belongs_to :album
-  belongs_to :listen
+  has_many :listens
 end
