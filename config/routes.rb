@@ -1,9 +1,8 @@
 Rails.application.routes.draw do
-  resources :songs
-  resources :reviews
-  resources :listens
-  resources :users
-  resources :albums
+  jsonapi_resources :reviews
+  jsonapi_resources :listens
+  jsonapi_resources :users
+  jsonapi_resources :albums
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

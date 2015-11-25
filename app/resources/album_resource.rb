@@ -4,7 +4,6 @@ class AlbumResource < JSONAPI::Resource
              :release_date,
              :completed_listen_count
 
-  relationship :songs, to: :many
   relationship :reviews, to: :many
 
   def completed_listen_count
