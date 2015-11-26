@@ -8,7 +8,7 @@ class AlbumResource < JSONAPI::Resource
 
   def completed_listen_count
     @model.songs.reduce(0) do |acc, song|
-      acc + song.listens.completed
+      acc + song.listens.completed.count
     end
   end
 

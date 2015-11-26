@@ -4,9 +4,9 @@
 #
 #  id         :integer          not null, primary key
 #  album_id   :integer
-#  listen_id  :integer
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
+#  name       :string
 #
 
 class Song < ActiveRecord::Base
